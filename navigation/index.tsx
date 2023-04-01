@@ -7,6 +7,7 @@ import { Typography } from "../theme/typography";
 import Home from "../src/screens/Home";
 import Notifications from "../src/screens/Notifications";
 import Login from "../src/screens/onboarding/Login";
+import Welcome from "../src/screens/onboarding/Welcome";
 
 const Tab: any = createBottomTabNavigator();
 
@@ -76,6 +77,7 @@ export function Navigation() {
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         {user ? (
           <>
+            <Stack.Screen name="Welcome" component={Welcome} />
             <Stack.Screen name="Login" component={Login} />
           </>
         ) : (
