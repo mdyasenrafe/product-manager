@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, ScrollView, SafeAreaView } from "react-native";
 import React from "react";
-import OwnText from "../../components/Text/Own.Text";
+import OwnText from "../../components/Text/OwnText";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { StatusBar } from "expo-status-bar";
