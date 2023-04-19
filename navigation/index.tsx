@@ -4,11 +4,11 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Colors } from "react-native/Libraries/NewAppScreen";
 import { Ionicons, Feather, FontAwesome } from "@expo/vector-icons";
 import { Typography } from "../theme/typography";
-import Home from "../src/screens/Home";
-import Notifications from "../src/screens/Notifications";
-import Login from "../src/screens/onboarding/Login";
-import Welcome from "../src/screens/onboarding/Welcome";
-
+import Home from "../view/screens/Home";
+import Notifications from "../view/screens/Notifications";
+import Welcome from "../view/screens/onboarding/Welcome";
+import Login from "../view/screens/onboarding/Login";
+import Signup from "../view/screens/onboarding/Signup";
 const Tab: any = createBottomTabNavigator();
 
 const TabBarIcon = ({
@@ -79,6 +79,7 @@ export function Navigation() {
           <>
             <Stack.Screen name="Welcome" component={Welcome} />
             <Stack.Screen name="Login" component={Login} />
+            <Stack.Screen name="Signup" component={Signup} />
           </>
         ) : (
           <>
